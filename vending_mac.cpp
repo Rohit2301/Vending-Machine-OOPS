@@ -280,6 +280,10 @@ int main()
         do
         {
             cout << "Insert" << mach->getCurrentSelectedItem() << " money for " << mach->getSellPrice(item) << endl;
+            if (mach->getCurrentInsertedMoney() < mach->getSellPrice(item))
+            {
+                cout << "Insert req money";
+            }
         } while (1);
 
     } while (1);
